@@ -171,7 +171,7 @@ bool play_again(Player& player, const string result)
 {
 	string again = "";
 
-	if (result == "Player Loses")
+	if ((result == "Player Loses") or (player.getMoney() == 0))
 	{
 		return false;
 	}
